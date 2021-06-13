@@ -1,19 +1,106 @@
-/* ✅ Специфичность - 0 0 0 2 */
-article > p {
-  color: orange;
+/* цвет основного текста  #212121  */
+/* вторичный цвет текста #757575  */
+/* белый текст #FFFFFF  */
+/* белый 60% прозрачность текст rgba(255, 255, 255, 0.6)  */
+/* акцент текста #2196F3  */
+
+/* background header: #FFFFFF; */
+/* background hero, footer: #2F303A; */
+/* background Наши приоритеты, Чем мы занимаемся: #E5E5E5; */
+/* background Наша команда: #F5F4FA; */
+
+:root {
+  --primary-text-color: #212121;
+  --accent-color: #2196f3;
+  --secondary-text-color: #757575;
+  --logo-color-header: #000000;
+  --primary-color-footer: #ffffff;
+  --address-color-footer: rgba(255, 255, 255, 0.6);
+  --text-color-hero: #ffffff;
+
+  --bg-color-header: #ffffff;
+  --bg-color-footer: #2f303a;
+  --bg-color-hero: #2f303a;
+  --bg-color-primary: #e5e5e5;
+  --bg-color-secondary: #f5f4fa;
 }
 
-p:hover {
-  color: blue;
-  background-color: orange;
-  cursor: pointer;
+body {
+  color: var(--primary-text-color);
+  background-color: var(--bg-color-primary);
 }
 
-p {
-  color: teal;
+ul {
+  list-style: none;
 }
 
-/* Специфичность - 0 0 0 1 */
-p {
-  color: green;
+a {
+  text-decoration: none;
+}
+
+/*  header */
+
+.page-heder {
+  background-color: var(--bg-color-header);
+}
+
+/*  logo  */
+.page-heder .logo {
+  color: var(--logo-color-header);
+}
+.logo span {
+  color: var(--accent-color);
+}
+.page-footer .logo {
+  color: var(--primary-color-footer);
+}
+
+/* site-nav */
+
+.site-nav a:visited,
+.site-nav a {
+  color: var(--primary-text-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .current {
+  color: var(--accent-color);
+}
+
+/* hesder address  */
+
+.page-heder-address a:visited,
+.page-heder-address a {
+  color: var(--secondary-text-color);
+}
+
+.page-heder-address a:hover,
+.page-heder-address a:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+
+.hero {
+  background-color: var(--bg-color-hero);
+}
+
+.hero-title {
+  color: var(--text-color-hero);
+}
+
+.hero button {
+  color: var(--text-color-hero);
+  background-color: var(--accent-color);
+}
+
+/* footer  */
+
+.page-footer {
+  color: var(--primary-color-footer);
+  background-color: var(--bg-color-footer);
 }
