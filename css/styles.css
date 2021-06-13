@@ -1,0 +1,19 @@
+/* ✅ Специфичность - 0 0 0 2 */
+article > p {
+  color: orange;
+}
+
+p:hover {
+  color: blue;
+  background-color: orange;
+  cursor: pointer;
+}
+
+p {
+  color: teal;
+}
+
+/* Специфичность - 0 0 0 1 */
+p {
+  color: green;
+}
