@@ -211,6 +211,7 @@ body {
   line-height: 19px;
   text-align: 1.19;
   text-align: center;
+  color: var(--secondary-text-color);
 }
 
 /* footer  */
