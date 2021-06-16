@@ -171,6 +171,10 @@ body {
 }
 
 /* все секции */
+.section-priorities,
+.section-occupation {
+  background-color: var(--bg-color-primary);
+}
 
 .section-title {
   font-size: 36px;
@@ -189,6 +193,10 @@ body {
   line-height: 1.71;
 
   color: var(--secondary-text-color);
+}
+
+.section-team {
+  background-color: var(--bg-color-secondary);
 }
 
 .team .title {
@@ -229,6 +237,10 @@ body {
 }
 
 /* секция портфолио */
+.section-portfolio {
+  background-color: var(--bg-color-primary);
+}
+
 .section-portfolio-works .title {
   font-size: 18px;
   line-height: 2;
