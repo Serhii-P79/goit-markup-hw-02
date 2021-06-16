@@ -152,6 +152,7 @@ body {
 }
 
 .hero button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -171,33 +172,33 @@ body {
 
 /* все секции */
 
-.section h3 {
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.priorities .title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.section p {
+.priorities .text {
   font-size: 14px;
   line-height: 1.71;
 
   color: var(--secondary-text-color);
 }
 
-.section h2 {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-.team h3 {
+.team .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
-.team p {
+.team .text {
   font-size: 16px;
   line-height: 19px;
   text-align: 1.19;
@@ -228,25 +229,29 @@ body {
 }
 
 /* секция портфолио */
-.section-portfolio-works h2 {
+.section-portfolio-works .title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
 }
 
-.section-portfolio-works p {
+.section-portfolio-works .text {
   font-size: 16px;
   line-height: 1.88;
+
+  color: var(--secondary-text-color);
 }
 
 .section-portfolio-filters button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   cursor: pointer;
 
+  color: inherit;
   background-color: var(--bg-color-secondary);
 }
 
